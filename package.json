@@ -1,0 +1,24 @@
+{
+  "name": "autocraft",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AUTOCRAFT platform on Stellar",
+  "scripts": {
+    "check:docs": "node scripts/check-docs.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/autocraft/autocraft.git"
+  },
+  "keywords": [
+    "stellar",
+    "soroban",
+    "autocraft",
+    "blockchain"
+  ],
+  "author": "AUTOCRAFT Contributors",
+  "license": "MIT",
+  "dependencies": {
+    "@sentry/react": "^10.55.0"
+  }
+}
