@@ -1,5 +1,5 @@
 <div align="center">
-  <img src=".github/assets/banner.svg" alt="Lernza" width="100%" />
+  <img src=".github/assets/banner.svg" alt="Autocraft" width="100%" />
 </div>
 
 <div align="center">
@@ -17,7 +17,7 @@
 
 ## Overview
 
-Lernza is a serverless, on-chain learning platform where quest owners create structured learning paths with milestones and token rewards. Learners complete quests, earn USDC, and receive NFT certificates — all enforced by Soroban smart contracts on Stellar. There is no backend server; the Stellar blockchain is the source of truth.
+Autocraft is a serverless, on-chain learning platform where quest owners create structured learning paths with milestones and token rewards. Learners complete quests, earn USDC, and receive NFT certificates — all enforced by Soroban smart contracts on Stellar. There is no backend server; the Stellar blockchain is the source of truth.
 
 <div align="center">
   <img src=".github/assets/how-it-works.svg" alt="How It Works" width="80%" />
@@ -117,13 +117,13 @@ Quick summary:
 ```bash
 # 1. Deploy contracts
 stellar contract deploy --wasm target/wasm32v1-none/release/rewards.wasm \
-  --source-account <DEPLOYER> --network testnet --alias lernza-rewards-testnet
+  --source-account <DEPLOYER> --network testnet --alias autocraft-rewards-testnet
 
 stellar contract deploy --wasm target/wasm32v1-none/release/quest.wasm \
-  --source-account <DEPLOYER> --network testnet --alias lernza-quest-testnet
+  --source-account <DEPLOYER> --network testnet --alias autocraft-quest-testnet
 
 stellar contract deploy --wasm target/wasm32v1-none/release/milestone.wasm \
-  --source-account <DEPLOYER> --network testnet --alias lernza-milestone-testnet
+  --source-account <DEPLOYER> --network testnet --alias autocraft-milestone-testnet
 
 # 2. Initialize rewards
 stellar contract invoke --id <REWARDS_ID> --source-account <DEPLOYER> \
@@ -251,4 +251,4 @@ Bug reports and feature requests: use the [issue templates](.github/ISSUE_TEMPLA
 
 ## License
 
-[MIT](LICENSE) © 2026 Lernza
+[MIT](LICENSE) © 2026 Autocraft
